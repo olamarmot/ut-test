@@ -1,0 +1,531 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>United Traders Test</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes" />
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="dist/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="dist/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="dist/images/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="dist/images/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#2d89ef">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" href="dist/css/styles.min.css">
+    
+    <!--fonts-->
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin />
+    <link rel="preload"
+          as="style"
+          href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=PT+Sans:wght@400;700&display=swap" />
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=PT+Sans:wght@400;700&display=swap"
+          media="print" onload="this.media='all'" />
+    <noscript>
+        <link rel="stylesheet"
+              href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=PT+Sans:wght@400;700&display=swap" />
+    </noscript>
+    <!--endfonts-->
+</head>
+<body class="page js-page">
+
+
+<!-- page-container -->
+<div class="page__container">
+	<header class="page__header header js-header">
+	<div class="header__wrp">
+		<div class="header__grid grid grid_v_center">
+			<div class="header__burger">
+				<button class="header__burger-button js-burger-button">
+					<svg class="header__burger-icon header__burger-icon_burger svg svg_burger"><use xlink:href="#icon-burger"></use></svg>
+					<svg class="header__burger-icon header__burger-icon_close svg svg_close"><use xlink:href="#icon-close"></use></svg>
+				</button>
+			</div>
+			
+			<a href="/#home" class="header__logo">
+				<img src="data:image/svg+xml;utf8,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20xmlns:xlink=%22http://www.w3.org/1999/xlink%22%20version=%221.1%22%20width=%22249%22%20height=%2249%22%3E%3C/svg%3E"
+				     data-src="dist/images/logo.svg" 
+				     width="249" height="49" alt="COMPANY NAME" 
+				     class="header__logo-img" data-lazy="">
+			</a>
+			
+			<nav class="header__nav nav grid grid_h_between">
+				<ul class="header__menu nav__list nav__list_main grid">
+					<li class="nav__item nav__item_parent">
+						<a class="nav__link" href="/">
+							Products
+							<svg class="nav__arrow svg svg_arrow"><use xlink:href="#icon-arrow"></use></svg>
+						</a>
+						
+						<ul class="nav__list nav__list_sub">
+							<li class="nav__item">
+								<a href="/" class="nav__link">Product 1</a>
+							</li>
+							
+							<li class="nav__item">
+								<a href="/" class="nav__link">Product 2</a>
+							</li>
+							
+							<li class="nav__item">
+								<a href="/" class="nav__link">Product 3</a>
+							</li>
+						</ul>
+					</li>
+					
+					<li class="nav__item">
+						<a class="nav__link" href="/">News & Events</a>
+					</li>
+					
+					<li class="nav__item">
+						<a class="nav__link" href="/">Support</a>
+					</li>
+					
+					<li class="nav__item">
+						<a class="nav__link" href="/">Contacts</a>
+					</li>
+				</ul>
+				
+				<ul class="nav__list nav__list_small grid">
+					<li class="nav__item">
+						<a class="nav__link nav__link_icon" href="/">
+							Login
+							<svg class="nav__login svg svg_login"><use xlink:href="#icon-login"></use></svg>
+						</a>
+					</li>
+					
+					<li class="nav__item">
+						<a class="nav__link nav__link_icon" href="/">
+							Buy Now
+							<svg class="nav__buynow svg svg_buynow"><use xlink:href="#icon-buynow"></use></svg>
+						</a>
+					</li>
+				</ul>
+		    </nav>
+		</div>
+	</div>
+</header>
+
+
+	
+	<!-- page-content -->
+	<main class="page__content">
+		<section class="section banner">
+			<div class="banner__bg">
+				<img src="data:image/svg+xml;utf8,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20xmlns:xlink=%22http://www.w3.org/1999/xlink%22%20version=%221.1%22%20width=%2264%22%20height=%2264%22%3E%3C/svg%3E" 
+				     data-src="dist/images/main-bg.png" 
+				     data-srcset="dist/images/main-bg@2x.png 2x, dist/images/main-bg@3x.png 3x"
+				     alt="background" class="banner__bg-img js-fit" data-lazy="">
+			</div>
+			
+			<div class="section__wrp banner__wrp">
+				<div class="banner__box">
+					<h1 class="banner__heading heading heading_type_h1">
+						WE SOLVE <br />
+						YOUR PROBLEMS
+					</h1>
+				</div>
+				
+				<div class="banner__box">
+					<p class="banner__caption caption caption_size_l">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc nec accumsan velit. Ut gravida id sem id sodales. Aenean quis enim dui. Vestibulum ullamcorper vel urna quis congue.
+					</p>
+				</div>
+			</div>
+		</section>
+		
+		<section class="section tiles tiles_linked">
+			<div class="section__wrp tiles__wrp">
+				<h2 class="section__heading">
+					Etiam ac nisl ac quam sodales scelerisque elementum quis purus.
+				</h2>
+				
+				<div class="tiles__list grid grid_h_center grid_wrap">
+					<div class="tiles__item">
+						<a href="/#tile-1" class="tiles__item-link">Learn More</a>
+						
+						<div class="tiles__item-wrp">
+							<div class="tiles__item-frame grid grid_v_center">
+								<img src="data:image/svg+xml;utf8,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20xmlns:xlink=%22http://www.w3.org/1999/xlink%22%20version=%221.1%22%20width=%2264%22%20height=%2264%22%3E%3C/svg%3E"
+								     data-src="dist/images/icons/icon_01.png"
+								     data-srcset="dist/images/icons/icon_01@2x.png 2x"
+								     alt="microscope" class="tiles__item-img" data-lazy="">
+								
+								<span class="tiles__item-dummy"></span>
+							</div>
+							
+							<div class="tiles__item-heading heading heading_type_h2">Donec efficitur molestie</div>
+							
+							<div class="tiles__item-caption caption caption_size_s">Nulla pretium nunc in nulla placerat, sit amet porttitor enim ullamcorper. Curabitur ex erat, euismod ac vestibulum vel, viverra non lorem.</div>
+							
+							<div class="tiles__item-link-text caption caption_size_s">Learn More</div>
+						</div>
+					</div>
+					
+					<div class="tiles__item">
+						<a href="/#tile-2" class="tiles__item-link">Learn More</a>
+						
+						<div class="tiles__item-wrp">
+							<div class="tiles__item-frame grid grid_v_center">
+								<img src="data:image/svg+xml;utf8,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20xmlns:xlink=%22http://www.w3.org/1999/xlink%22%20version=%221.1%22%20width=%2264%22%20height=%2264%22%3E%3C/svg%3E"
+								     data-src="dist/images/icons/icon_02.png"
+								     data-srcset="dist/images/icons/icon_02@2x.png 2x"
+								     alt="building" class="tiles__item-img" data-lazy="">
+								
+								<span class="tiles__item-dummy"></span>
+							</div>
+							
+							<div class="tiles__item-heading heading heading_type_h2">
+								Mauris interdum venenatis
+							</div>
+							
+							<div class="tiles__item-caption caption caption_size_s">
+								Vivamus cursus ante eu orci rutrum, vitae viverra ante dapibus. Vivamus porta molestie turpis, quis elementum nisi egestas eget.
+							</div>
+							
+							<div class="tiles__item-link-text caption caption_size_s">Learn More</div>
+						</div>
+					</div>
+					
+					<div class="tiles__item">
+						<a href="/#tile-3" class="tiles__item-link">Learn More</a>
+						
+						<div class="tiles__item-wrp">
+							<div class="tiles__item-frame grid grid_v_center">
+								<img src="data:image/svg+xml;utf8,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20xmlns:xlink=%22http://www.w3.org/1999/xlink%22%20version=%221.1%22%20width=%2264%22%20height=%2264%22%3E%3C/svg%3E"
+								     data-src="dist/images/icons/icon_03.png"
+								     data-srcset="dist/images/icons/icon_03@2x.png 2x"
+								     alt="house" class="tiles__item-img" data-lazy="">
+								
+								<span class="tiles__item-dummy"></span>
+							</div>
+							
+							<div class="tiles__item-heading heading heading_type_h2">
+								Cras sit amet
+							</div>
+							
+							<div class="tiles__item-caption caption caption_size_s">
+								Fusce suscipit, ante at imperdiet vehicula, ex augue feugiat enim, sed faucibus sem tortor quis turpis. Mauris lacinia neque id augue efficitur, ut feugiat massa efficitur.
+							</div>
+							
+							<div class="tiles__item-link-text caption caption_size_s">Learn More</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<section class="section tiles">
+			<div class="section__wrp tiles__wrp">
+				<h2 class="section__heading">
+					Etiam ac nisl ac quam sodales scelerisque elementum quis purus.
+				</h2>
+				
+				<div class="tiles__article article">
+					<p>
+						Integer bibendum turpis sit amet pretium commodo. Cras justo elit, dapibus at viverra non, dapibus vitae est. Morbi facilisis mi non iaculis porttitor. Phasellus a nibh a lacus dignissim pharetra. Vivamus ullamcorper finibus mauris, sit amet volutpat enim sollicitudin sed.
+					</p>
+				</div>
+				
+				<div class="tiles__list grid grid_h_center grid_wrap">
+					<div class="tiles__item">
+						<div class="tiles__item-wrp">
+							<div class="tiles__item-frame grid grid_v_center">
+								<img src="data:image/svg+xml;utf8,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20xmlns:xlink=%22http://www.w3.org/1999/xlink%22%20version=%221.1%22%20width=%2264%22%20height=%2264%22%3E%3C/svg%3E"
+								     data-src="dist/images/icons/icon_04.png"
+								     data-srcset="dist/images/icons/icon_04@2x.png 2x"
+								     alt="magnifier" class="tiles__item-img" data-lazy="">
+								
+								<span class="tiles__item-dummy"></span>
+							</div>
+							
+							<div class="tiles__item-heading heading heading_type_h2">Proin felis eros</div>
+							
+							<div class="tiles__item-caption caption caption_size_s">Iverra sed eros id, eleifend maximus tortor</div>
+						</div>
+					</div>
+					
+					<div class="tiles__item">
+						<div class="tiles__item-wrp">
+							<div class="tiles__item-frame grid grid_v_center">
+								<img src="data:image/svg+xml;utf8,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20xmlns:xlink=%22http://www.w3.org/1999/xlink%22%20version=%221.1%22%20width=%2264%22%20height=%2264%22%3E%3C/svg%3E"
+								     data-src="dist/images/icons/icon_05.png"
+								     data-srcset="dist/images/icons/icon_05@2x.png 2x"
+								     alt="clock" class="tiles__item-img" data-lazy="">
+								
+								<span class="tiles__item-dummy"></span>
+							</div>
+							
+							<div class="tiles__item-heading heading heading_type_h2">
+								Suspendisse potenti
+							</div>
+							
+							<div class="tiles__item-caption caption caption_size_s">
+								Vestibulum mi risus, aliquam vitae efficitur quis
+							</div>
+						</div>
+					</div>
+					
+					<div class="tiles__item">
+						<div class="tiles__item-wrp">
+							<div class="tiles__item-frame grid grid_v_center">
+								<img src="data:image/svg+xml;utf8,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20xmlns:xlink=%22http://www.w3.org/1999/xlink%22%20version=%221.1%22%20width=%2264%22%20height=%2264%22%3E%3C/svg%3E"
+								     data-src="dist/images/icons/icon_06.png"
+								     data-srcset="dist/images/icons/icon_06@2x.png 2x"
+								     alt="folder" class="tiles__item-img" data-lazy="">
+								
+								<span class="tiles__item-dummy"></span>
+							</div>
+							
+							<div class="tiles__item-heading heading heading_type_h2">
+								Fusce pretium enim
+							</div>
+							
+							<div class="tiles__item-caption caption caption_size_s">
+								Quisque at dui nunc. Curabitur sodales, turpis at luctus suscipit, nisl leo dignissim turpis
+							</div>
+						</div>
+					</div>
+					
+					<div class="tiles__item">
+						<div class="tiles__item-wrp">
+							<div class="tiles__item-frame grid grid_v_center">
+								<img src="data:image/svg+xml;utf8,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20xmlns:xlink=%22http://www.w3.org/1999/xlink%22%20version=%221.1%22%20width=%2264%22%20height=%2264%22%3E%3C/svg%3E"
+								     data-src="dist/images/icons/icon_07.png"
+								     data-srcset="dist/images/icons/icon_07@2x.png 2x"
+								     alt="controller" class="tiles__item-img" data-lazy="">
+								
+								<span class="tiles__item-dummy"></span>
+							</div>
+							
+							<div class="tiles__item-heading heading heading_type_h2">Vivamus urna eros</div>
+							
+							<div class="tiles__item-caption caption caption_size_s">Fusce facilisis nunc a urna lacinia, nec sagittis felis efficitur. Phasellus commodo porttitor odio</div>
+						</div>
+					</div>
+					
+					<div class="tiles__item">
+						<div class="tiles__item-wrp">
+							<div class="tiles__item-frame grid grid_v_center">
+								<img src="data:image/svg+xml;utf8,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20xmlns:xlink=%22http://www.w3.org/1999/xlink%22%20version=%221.1%22%20width=%2264%22%20height=%2264%22%3E%3C/svg%3E"
+								     data-src="dist/images/icons/icon_08.png"
+								     data-srcset="dist/images/icons/icon_08@2x.png 2x"
+								     alt="paper" class="tiles__item-img" data-lazy="">
+								
+								<span class="tiles__item-dummy"></span>
+							</div>
+							
+							<div class="tiles__item-heading heading heading_type_h2">Maecenas congue nisi</div>
+							
+							<div class="tiles__item-caption caption caption_size_s">
+								Interdum et malesuada fames ac ante ipsum primis in faucibus. Curabitur vulputate
+								<a href="/#arcu-nisi" class="tiles__item-caption-link">arcu nisi</a>
+							</div>
+						</div>
+					</div>
+					
+					<div class="tiles__item">
+						<div class="tiles__item-wrp">
+							<div class="tiles__item-frame grid grid_v_center">
+								<img src="data:image/svg+xml;utf8,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20xmlns:xlink=%22http://www.w3.org/1999/xlink%22%20version=%221.1%22%20width=%2264%22%20height=%2264%22%3E%3C/svg%3E"
+								     data-src="dist/images/icons/icon_09.png"
+								     data-srcset="dist/images/icons/icon_09@2x.png 2x"
+								     alt="scheme" class="tiles__item-img" data-lazy="">
+								
+								<span class="tiles__item-dummy"></span>
+							</div>
+							
+							<div class="tiles__item-heading heading heading_type_h2">Nullam purus velit</div>
+							
+							<div class="tiles__item-caption caption caption_size_s">Praesent ac turpis sit amet ex euismod congue vitae sit amet risus</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="tiles__footer">
+					<a href="/#view-all-our-products" class="tiles__button button button_theme_main button_size_g">
+						View All Our Products
+					</a>
+				</div>
+				
+				
+			</div>
+		</section>
+		
+		<section class="section about">
+			<div class="section__wrp about__wrp">
+				<h2 class="section__heading">
+					Wordlwide recognition
+				</h2>
+				
+				<div class="about__article article">
+					<p>
+						Integer bibendum turpis sit amet pretium commodo. Cras justo elit, dapibus at viverra non, dapibus vitae est.
+					</p>
+					
+					<p>
+						Fusce pretium enim sit amet elementum eleifend. Quisque at dui nunc. Curabitur sodales, turpis at luctus suscipit, nisl leo dignissim turpis, quis blandit justo nulla sed nisi. Vivamus urna eros, malesuada non massa sed, vestibulum maximus dui. Fusce facilisis nunc a urna lacinia, nec sagittis felis efficitur. Phasellus commodo porttitor odio, eu commodo nisi vehicula ut. Maecenas congue nisi lorem, et maximus ante vestibulum eu. Vivamus non imperdiet ex.
+					</p>
+				</div>
+				
+				<div class="about__gallery">
+					<div class="about__gallery-grid grid grid_h_center grid_wrap">
+						<a href="/#about-external-1" class="about__gallery-link" 
+						   target="_blank" rel="nofollow noopener">
+							<img src="data:image/svg+xml;utf8,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20xmlns:xlink=%22http://www.w3.org/1999/xlink%22%20version=%221.1%22%20width=%2293%22%20height=%2287%22%3E%3C/svg%3E" 
+							     data-src="dist/images/gallery/image_01.png"
+							     data-srcset="dist/images/gallery/image_01@2x.png 2x"
+							     alt="company_01" class="about__gallery-img"
+							     width="93" height="87" data-lazy="">
+						</a>
+						
+						<a href="/#about-external-2" class="about__gallery-link" 
+						   target="_blank" rel="nofollow noopener">
+							<img src="data:image/svg+xml;utf8,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20xmlns:xlink=%22http://www.w3.org/1999/xlink%22%20version=%221.1%22%20width=%2294%22%20height=%2295%22%3E%3C/svg%3E" 
+							     data-src="dist/images/gallery/image_02.png"
+							     data-srcset="dist/images/gallery/image_02@2x.png 2x"
+							     alt="company_02" class="about__gallery-img"
+							     width="94" height="95" data-lazy="">
+						</a>
+						
+						<a href="/#about-external-3" class="about__gallery-link" 
+						   target="_blank" rel="nofollow noopener">
+							<img src="data:image/svg+xml;utf8,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20xmlns:xlink=%22http://www.w3.org/1999/xlink%22%20version=%221.1%22%20width=%2294%22%20height=%22105%22%3E%3C/svg%3E" 
+							     data-src="dist/images/gallery/image_03.png"
+							     data-srcset="dist/images/gallery/image_03@2x.png 2x"
+							     alt="company_03" class="about__gallery-img"
+							     width="94" height="105" data-lazy="">
+						</a>
+						
+						<a href="/#about-external-4" class="about__gallery-link" 
+						   target="_blank" rel="nofollow noopener">
+							<img src="data:image/svg+xml;utf8,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20xmlns:xlink=%22http://www.w3.org/1999/xlink%22%20version=%221.1%22%20width=%22102%22%20height=%2299%22%3E%3C/svg%3E" 
+							     data-src="dist/images/gallery/image_04.png"
+							     data-srcset="dist/images/gallery/image_04@2x.png 2x"
+							     alt="company_04" class="about__gallery-img"
+							     width="102" height="99" data-lazy="">
+						</a>
+						
+						<a href="/#about-external-5" class="about__gallery-link" 
+						   target="_blank" rel="nofollow noopener">
+							<img src="data:image/svg+xml;utf8,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20xmlns:xlink=%22http://www.w3.org/1999/xlink%22%20version=%221.1%22%20width=%22190%22%20height=%2245%22%3E%3C/svg%3E" 
+							     data-src="dist/images/gallery/image_05.png"
+							     data-srcset="dist/images/gallery/image_05@2x.png 2x"
+							     alt="company_05" class="about__gallery-img"
+							     width="190" height="45" data-lazy="">
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+	<!-- /page-content -->
+	
+	<footer class="page__footer footer">
+	<div class="footer__wrp">
+		<nav class="footer__nav nav">
+			<ul class="nav__list nav__list_footer grid grid_h_center">
+				<li class="nav__item">
+					<a class="nav__link" href="/">PRIVACY POLICY</a>
+				</li>
+				
+				<li class="nav__item">
+					<a class="nav__link" href="/">ABOUT US</a>
+				</li>
+				
+				<li class="nav__item">
+					<a class="nav__link" href="/">SUPPORT</a>
+				</li>
+			</ul>
+		</nav>
+		
+		<div class="footer__social">
+			<a href="https://www.facebook.com/unitedtraders" 
+			   target="_blank" rel="noopener" 
+			   class="footer__social-link">
+				<svg class="footer__social-svg svg svg_social svg_social-fb"><use xlink:href="#icon-fb"></use></svg>
+			</a>
+			
+			<a href="https://twitter.com/UnitedTraders_1" 
+			   target="_blank" rel="noopener" 
+			   class="footer__social-link">
+				<svg class="footer__social-svg svg svg_social svg_social-tw"><use xlink:href="#icon-tw"></use></svg>
+			</a>
+			
+			<a href="https://www.instagram.com/unitedtraders_official" 
+			   target="_blank" rel="noopener" 
+			   class="footer__social-link">
+				<svg class="footer__social-svg svg svg_social svg_social-ig"><use xlink:href="#icon-ig"></use></svg>
+			</a>
+		</div>
+		
+		<div class="footer__copyright heading heading_type_h3">
+			Copyright © 1999 - 2019
+		</div>
+	</div>
+</footer>
+	
+
+
+</div>
+<!-- /page-container -->
+
+<div class="page__svg">
+	<svg aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+		<!--arrow-->
+		<symbol id="icon-arrow" viewBox="0 0 12 14" preserveAspectRatio="xMidYMid meet">
+			<path fill="currentColor" fill-rule="evenodd" d="M10.785 3.00999C10.6925 3.01707 10.6066 3.05719 10.545 3.12199L6 7.36399L1.455 3.12199C1.41712 3.08519 1.37076 3.05692 1.31943 3.03934C1.2681 3.02175 1.21315 3.01531 1.15875 3.02049C1.09091 3.02728 1.02653 3.05192 0.973119 3.09155C0.919704 3.13117 0.879452 3.18414 0.857052 3.24429C0.834653 3.30445 0.831027 3.3693 0.846599 3.4313C0.86217 3.4933 0.896297 3.5499 0.945004 3.59449L5.74501 8.07449C5.77845 8.10581 5.81819 8.13066 5.86195 8.14762C5.90571 8.16458 5.95263 8.1733 6 8.1733C6.04738 8.1733 6.0943 8.16458 6.13806 8.14762C6.18182 8.13066 6.22156 8.10581 6.255 8.07449L11.055 3.59449C11.1109 3.54745 11.1496 3.48525 11.1656 3.41663C11.1817 3.348 11.1743 3.27641 11.1445 3.21191C11.1147 3.1474 11.064 3.09324 10.9995 3.05702C10.935 3.02081 10.86 3.00436 10.785 3.00999Z"/>
+		</symbol>
+		
+		<!--facebook-->
+		<symbol id="icon-fb" viewBox="0 0 16 31" preserveAspectRatio="xMidYMid meet">
+			<path fill="currentColor" fill-rule="evenodd" d="M15.3975 0.00645007L11.5598 0C7.24832 0 4.46205 2.99444 4.46205 7.62914V11.1467H0.603437C0.270007 11.1467 0 11.4298 0 11.7791V16.8756C0 17.2249 0.270315 17.5077 0.603437 17.5077H4.46205V30.3679C4.46205 30.7172 4.73205 31 5.06548 31H10.0999C10.4333 31 10.7033 30.7168 10.7033 30.3679V17.5077H15.2149C15.5483 17.5077 15.8184 17.2249 15.8184 16.8756L15.8202 11.7791C15.8202 11.6114 15.7565 11.4508 15.6435 11.3321C15.5305 11.2134 15.3766 11.1467 15.2165 11.1467H10.7033V8.16482C10.7033 6.73161 11.0293 6.00405 12.8116 6.00405L15.3969 6.00308C15.73 6.00308 16 5.71992 16 5.37097V0.638557C16 0.289931 15.7303 0.00709508 15.3975 0.00645007Z"/>
+		</symbol>
+		
+		<!--twitter-->
+		<symbol id="icon-tw" viewBox="0 0 30 31" preserveAspectRatio="xMidYMid meet">
+			<path fill="currentColor" fill-rule="evenodd" d="M30 5.88884C28.8958 6.39441 27.7111 6.73729 26.4663 6.89036C27.7373 6.10386 28.7103 4.85637 29.1714 3.37444C27.9791 4.10279 26.6631 4.63167 25.2608 4.91837C24.138 3.68054 22.5407 2.90955 20.7692 2.90955C17.3705 2.90955 14.6147 5.75714 14.6147 9.26723C14.6147 9.76505 14.6691 10.2513 14.7741 10.7162C9.66006 10.4508 5.12531 7.91898 2.09026 4.07179C1.55972 5.00939 1.2579 6.10189 1.2579 7.26808C1.2579 9.4745 2.34521 11.4213 3.99491 12.5603C2.98634 12.5255 2.03776 12.2388 1.20732 11.7622V11.8416C1.20732 14.9217 3.32942 17.4923 6.14325 18.0773C5.62771 18.2207 5.08408 18.3001 4.52168 18.3001C4.12428 18.3001 3.73996 18.2594 3.36315 18.1819C4.14673 20.7099 6.41884 22.5482 9.11085 22.5986C7.0056 24.3033 4.35109 25.3164 1.4679 25.3164C0.97114 25.3164 0.481826 25.2854 6.10352e-05 25.2292C2.72393 27.0366 5.95771 28.0904 9.4333 28.0904C20.7543 28.0904 26.9425 18.4008 26.9425 9.99755L26.9219 9.17428C28.131 8.28313 29.177 7.16349 30 5.88884Z"/>
+		</symbol>
+		
+		<!--instagram-->
+		<symbol id="icon-ig" viewBox="0 0 32 32" preserveAspectRatio="xMidYMid meet">
+			<path fill="currentColor" fill-rule="evenodd" d="M22 0H10C4.478 0 0 4.478 0 10V22C0 27.522 4.478 32 10 32H22C27.522 32 32 27.522 32 22V10C32 4.478 27.522 0 22 0ZM29 22C29 25.86 25.86 29 22 29H10C6.14 29 3 25.86 3 22V10C3 6.14 6.14 3 10 3H22C25.86 3 29 6.14 29 10V22Z"/>
+			<path fill="currentColor" fill-rule="evenodd" d="M16 8C11.582 8 8 11.582 8 16C8 20.418 11.582 24 16 24C20.418 24 24 20.418 24 16C24 11.582 20.418 8 16 8ZM16 21C13.244 21 11 18.756 11 16C11 13.242 13.244 11 16 11C18.756 11 21 13.242 21 16C21 18.756 18.756 21 16 21Z"/>
+			<path fill="currentColor" fill-rule="evenodd" d="M24.6 8.46598C25.1887 8.46598 25.666 7.98872 25.666 7.39998C25.666 6.81125 25.1887 6.33398 24.6 6.33398C24.0113 6.33398 23.534 6.81125 23.534 7.39998C23.534 7.98872 24.0113 8.46598 24.6 8.46598Z"/>
+		</symbol>
+		
+		<!--burger-->
+		<symbol id="icon-burger" viewBox="0 0 20 15.98" preserveAspectRatio="xMidYMid meet">
+			<path fill="currentColor" d="M18.95,14H1.05a1,1,0,1,0,0,2H18.95a1,1,0,1,0,0-2Z"/>
+			<path fill="currentColor" d="M1.05,2H18.95A1,1,0,0,0,20,1a1,1,0,0,0-1.05-1H1.05A1,1,0,0,0,0,1,1,1,0,0,0,1.05,2Z"/>
+			<path fill="currentColor" d="M18.95,7H1.05a1,1,0,1,0,0,2H18.95a1,1,0,1,0,0-2Z"/>
+		</symbol>
+		
+		<!--close-->
+		<symbol id="icon-close" viewBox="0 0 20 20" preserveAspectRatio="xMidYMid meet">
+			<path fill="currentColor" d="M11,9.61l7.9-7.9A1,1,0,0,0,17.51.29l-7.9,7.9L1.71.29A1,1,0,0,0,.29,1.71l7.9,7.9-7.9,7.9a1,1,0,1,0,1.41,1.41L9.61,11l7.9,7.9a1,1,0,0,0,1.41-1.41Z"/>
+		</symbol>
+		
+		<!--login-->
+		<symbol id="icon-login" viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet">
+			<path fill="currentColor" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zM7.07 18.28c.43-.9 3.05-1.78 4.93-1.78s4.51.88 4.93 1.78C15.57 19.36 13.86 20 12 20s-3.57-.64-4.93-1.72zm11.29-1.45c-1.43-1.74-4.9-2.33-6.36-2.33s-4.93.59-6.36 2.33C4.62 15.49 4 13.82 4 12c0-4.41 3.59-8 8-8s8 3.59 8 8c0 1.82-.62 3.49-1.64 4.83zM12 6c-1.94 0-3.5 1.56-3.5 3.5S10.06 13 12 13s3.5-1.56 3.5-3.5S13.94 6 12 6zm0 5c-.83 0-1.5-.67-1.5-1.5S11.17 8 12 8s1.5.67 1.5 1.5S12.83 11 12 11z"/>
+		</symbol>
+		
+		<!--buynow-->
+		<symbol id="icon-buynow" viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet">
+			<path fill="currentColor" d="M16 6V4c0-1.11-.89-2-2-2h-4c-1.11 0-2 .89-2 2v2H2v13c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V6h-6zm-6-2h4v2h-4V4zm10 15H4V8h16v11zM9 18l7.5-5L9 9z"/>
+		</symbol>
+	</svg>
+</div>
+
+
+<script src="dist/js/main.min.js"></script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,100 @@
+.article {
+	h1 {
+		font-size: 48px;
+		line-height: 58px;
+		margin: 30px 0 20px;
+	}
+	
+	h2 {
+		font-size: 18px;
+		line-height: 24px;
+		margin: 30px 0 20px;
+	}
+
+	h3 {
+		font-size: 16px;
+		line-height: 21px;
+		margin: 20px 0 15px;
+	}
+
+	h4, h5, h6 {
+		font-size: 15px;
+		line-height: 20px;
+		margin: 20px 0 15px;
+	}
+
+	h1, h2, h3, h4, h5, h6 {
+		font-weight: 700;
+
+		&:first-child {
+			margin-top: 0;
+		}
+		
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+	
+	a {
+		color: $link;
+		border-bottom: 1px solid $link;
+
+		@media #{$breakpointHover} {
+			&:focus,
+			&:hover {
+				border-color: transparent;
+			}
+		}
+
+		&:active {
+			color: $accent;
+		}
+	}
+
+	ol,
+	ul {
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 21px;
+		margin: 21px 0;
+
+		&:first-child {
+			margin-top: 0;
+		}
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	ol {
+		counter-reset: myCounter;
+	}
+
+	li ul,
+	li ol {
+		margin: 10px 0;
+	}
+
+	li {
+		margin-bottom: 5px;
+	}
+
+	ul li,
+	ol li {
+		list-style-type: none;
+	}
+
+	ul > li {
+		&::before {
+			content: '\2014\00a0';
+		}
+	}
+
+	ol > li {
+		&::before {
+			counter-increment: myCounter;
+			content: counter(myCounter) ". ";
+		}
+	}
+}

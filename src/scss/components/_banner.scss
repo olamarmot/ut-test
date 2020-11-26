@@ -1,0 +1,58 @@
+.banner {
+	background-color: $bg-dark;
+	color: #fff;
+	position: relative;
+	overflow: hidden;
+	min-height: 500px;
+
+	@media #{$breakpointMobile} {
+		min-height: 400px;
+	}
+	
+	&__wrp {
+		padding-top: 153px;
+		padding-bottom: 99px;
+		position: relative;
+		z-index: 1;
+
+		@media #{$breakpointMobile} {
+			padding-top: 120px;
+			padding-bottom: 80px;
+		}
+	}
+	
+	&__bg {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		z-index: 0;
+		
+		&-img {
+			object-fit: cover;
+			object-position: 50% 50%;
+			width: 100%;
+			height: 100%;
+		}
+	}
+	
+	&__box {
+		text-align: center;
+		padding-left: 90px;
+		padding-right: 90px;
+
+		@media #{$breakpointMobile} {
+			padding-left: 15px;
+			padding-right: 15px;
+		}
+		
+		& + & {
+			margin-top: 84px;
+
+			@media #{$breakpointMobile} {
+				margin-top: 44px;
+			}
+		}
+	}
+}

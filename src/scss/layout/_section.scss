@@ -1,0 +1,26 @@
+//section
+.section {
+    & + & {
+        margin-top: 80px;
+
+        @media #{$breakpointTablet} {
+            margin-top: 60px;
+        }
+
+        @media #{$breakpointMobile} {
+            margin-top: 50px;
+        }
+    }
+    
+    &__wrp {
+        @extend %wrp;
+        @extend %padding_g;
+    }
+    
+    &__heading {
+        @extend .heading;
+        @extend .heading_type_h2;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+}

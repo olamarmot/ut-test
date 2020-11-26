@@ -1,0 +1,182 @@
+//NAVIGATION LAYOUT
+.nav {
+	@extend .caption;
+	@extend .caption_size_g;
+	
+    &__list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+	    
+	    & + & {
+		    margin-left: 25px;
+		    
+	    }
+	    
+	    &_main {
+		    
+	    }
+
+	    &_sub {
+		    position: absolute;
+		    top: 100%;
+		    left: 0;
+		    min-width: 100%;
+		    background-color: rgba(255, 255, 255, 0.3);
+		    border-radius: 4px;
+		    opacity: 0;
+		    visibility: hidden;
+		    transform: translateY(-8px);
+		    transition: all 0.15s linear;
+
+		    @media #{$breakpointTablet} {
+			    position: static;
+			    top: 0;
+			    background-color: transparent;
+			    border-radius: 0;
+			    opacity: 1;
+			    visibility: visible;
+			    transform: none;
+			    padding-left: 14px;
+		    }
+	    }
+	    
+	    &_small {
+
+	    }
+	    
+	    &_footer {
+		    text-transform: uppercase;
+
+		    @media #{$breakpointMobile} {
+			    font-size: 14px;
+			    line-height: 18px;
+		    }
+	    }
+    }
+	
+	.header__nav > &__list:last-child {
+		margin-right: -14px;
+
+		@media #{$breakpointMobile} {
+			margin-right: -10px;
+		}
+	}
+	
+    &__item {
+		display: block;
+	    
+	    & + & {
+		    margin-left: 33px;
+
+		    @media #{$breakpointSmallDisplay} {
+			    margin-left: 23px;
+		    }
+
+		    @media #{$breakpointTablet} {
+			    margin: 0;
+		    }
+	    }
+	    
+	    &_parent {
+		    position: relative;
+		    margin-right: -15px;
+		    
+		    @media #{$breakpointTablet} {
+			    margin: 0;
+		    }
+	    }
+    }
+
+	@media #{$breakpointHover} {
+		&__item_parent > &__link:focus ~ &__list,
+		&__item_parent:hover &__list,
+		&__item_parent &__list:focus-within {
+			opacity: 1;
+			visibility: visible;
+			transform: none;
+		}
+	}
+
+	&__item_parent > &__link {
+		display: flex;
+		align-items: flex-end;
+	}
+	
+	&__list_footer &__item + &__item,
+	&__list_small &__item + &__item {
+		margin-left: 1px;
+	}
+	
+	&__list_sub &__item {
+		margin: 0;
+	}
+	
+	&__list_main > &__item {
+		@media #{$breakpointTablet} {
+			padding-left: 0;
+			padding-right: 0;
+		}
+	}
+	
+	&__list_main > &__item + &__item {
+		@media #{$breakpointTablet} {
+			margin-top: 10px;
+		}
+	}
+	
+    &__link {
+		display: block;
+	    cursor: pointer;
+	    padding: 14px;
+	    
+	    @media #{$breakpointHover} {
+		    &:focus,
+		    &:hover {
+			   color: $hover;
+		    }
+	    }
+
+	    &:active {
+		    color: $active;
+	    }
+	    
+	    &_icon {
+		    @media #{$breakpointMobile} {
+			    font-size: 0;
+			    line-height: 0;
+			    padding-left: 10px;
+			    padding-right: 10px;
+		    }
+	    }
+    }
+	
+	&__list_footer &__link {
+
+		@media #{$breakpointMobile} {
+			padding-left: 10px;
+			padding-right: 10px;
+		}
+	}
+	
+	&__arrow {
+		color: inherit;
+		margin-left: 5px;
+	}
+	
+	&__login,
+	&__buynow {
+		display: none;
+
+		@media #{$breakpointMobile} {
+			display: block;
+		}
+	}
+}
+
+
+
+
+
+
+

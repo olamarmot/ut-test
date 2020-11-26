@@ -1,0 +1,26 @@
+//Vars
+$browser-context: 14;
+
+//Fonts
+$font-ptsans: 'PT Sans', sans-serif;
+$font-opensans: 'Open Sans', sans-serif;
+
+//Breakpoint
+$breakpointDisplay: 'screen and (max-width: 1365px)';
+$breakpointSmallDisplay: 'screen and (max-width: 1099px)';
+$breakpointTablet: 'screen and (max-width: 1023px)';
+$breakpointOnlyTablet: 'screen and (min-width: 768px) and (max-width: 1023px)';
+$breakpointMobile: 'screen and (max-width: 767px)';
+$breakpointSmallMobile: 'screen and (max-width: 359px)';
+$breakpointHover: 'screen and (min-width: 1024px)';
+
+//Colors
+$accent: #85b657;
+$active: #f00;
+$hover: #ff0;
+$bg-dark: #19263f;
+$light-grey: #fafafa;
+$link: #1657ab;
+
+
+

@@ -1,0 +1,73 @@
+//Button
+.button {
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+
+	outline: none;
+    background: none;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 14px;
+	font-weight: 400;
+    text-decoration: none;
+    margin: 0;
+	cursor: pointer;
+    
+    outline: 0;
+    text-align: center;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    white-space: nowrap;
+    -webkit-tap-highlight-color: transparent;
+    transition: all .2s ease-out;
+	position: relative;
+	
+	&:disabled,
+	&[disabled],
+	.loading & {
+		pointer-events: none;
+		cursor: not-allowed;
+	}
+	
+	&:focus,
+	&:active {
+		outline: none!important;
+	}
+
+	//Theme
+	&_theme_main {
+		border: 1px solid $accent;
+		min-width: 120px;
+
+		@media #{$breakpointHover} {
+			&:focus,
+			&:hover {
+				background-color: $accent;
+				color: #fff;
+			}
+		}
+		
+		&:active {
+			background-color: $accent;
+			color: #fff;
+			transition: transform 0.05s linear;
+			transform: scale(0.9);
+		}
+	}
+	
+	//Size
+    &_size_g {
+	    height: 56px;
+	    border-radius: 4px;
+	    padding: 20px 50px;
+	    line-height: 14px;
+
+	    @media #{$breakpointMobile} {
+		    height: 50px;
+		    padding-top: 18px;
+		    padding-bottom: 18px;
+	    }
+    }
+}

@@ -1,0 +1,44 @@
+.about {
+	&__wrp {
+		
+	}
+	
+	&__heading {
+		
+	}
+	
+	&__article {
+		margin-bottom: 3px;
+	}
+	
+	&__gallery {
+		
+		&-grid {
+			text-align: center;
+		}
+		
+		&-link {
+			@extend .grid;
+			@extend .grid_v_center;
+			@extend .grid_h_center;
+			margin-top: 17px;
+			margin-left: 17px;
+			margin-right: 17px;
+		}
+		
+		&-img {
+			transition: transform 0.05s linear;
+		}
+
+		@media #{$breakpointHover} {
+			&-link:hover &-img,
+			&-link:focus &-img {
+				transform: scale(0.95);
+			}
+		}
+		
+		&-link:active &-img {
+			transform: scale(0.85);
+		}
+	}
+}

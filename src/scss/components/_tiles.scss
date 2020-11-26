@@ -1,0 +1,258 @@
+.tiles {
+	&__wrp {
+		
+	}
+	
+	&__heading {
+		
+	}
+
+	&__article {
+		margin-bottom: 52px;
+
+		@media #{$breakpointMobile} {
+			margin-bottom: 30px;
+		}
+	}
+	
+	&__list {
+		@media #{$breakpointMobile} {
+			flex-wrap: nowrap;
+			justify-content: flex-start;
+			overflow-x: auto;
+			overflow-y: hidden;
+			white-space: nowrap;
+			-webkit-overflow-scrolling: touch;
+			scrollbar-width: none;
+			margin: -4px -15px -8px;
+			padding: 4px 15px 8px;
+			
+			&::after {
+				content: '';
+				display: block;
+				width: 15px;
+				min-height: 15px;
+				flex-shrink: 0;
+
+				@media #{$breakpointSmallMobile} {
+					width: 10px;
+				}
+			}
+
+			@media #{$breakpointSmallMobile} {
+				margin-left: -10px;
+				margin-right: -10px;
+				padding-left: 10px;
+				padding-right: 10px;
+			}
+		}
+	}
+	
+	&__item {
+		position: relative;
+		width: calc((100% - 40px)/3);
+		margin-right: 20px;
+		
+		@media #{$breakpointMobile} {
+			flex-shrink: 0;
+			width: 300px;
+			margin-right: 15px;
+			white-space: normal;
+		}
+
+		@media #{$breakpointSmallMobile} {
+			width: 270px;
+			margin-right: 10px;
+		}
+				
+		&:nth-child(3n),
+		&:last-child {
+			margin-right: 0;
+
+			@media #{$breakpointMobile} {
+				margin-right: 15px;
+			}
+
+			@media #{$breakpointSmallMobile} {
+				margin-right: 10px;
+			}
+		}
+		
+		&-link {
+			display: block;
+			position: absolute;
+			z-index: 1;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			text-indent: -9999px;
+			font-size: 0;
+		}
+		
+		&-wrp {
+			text-align: center;
+			padding: 5px 35px 5px;
+
+			@media #{$breakpointTablet} {
+				padding-left: 20px;
+				padding-right: 20px;
+			}
+
+			@media #{$breakpointMobile} {
+				box-shadow: 0 2px 4px rgba($accent, 0.25);
+				border-radius: 3px;
+			}
+		}
+		
+		&-frame {
+			position: relative;
+			margin-bottom: 25px;
+			margin-left: auto;
+			margin-right: auto;
+			height: 64px;
+
+			@media #{$breakpointMobile} {
+				margin-bottom: 22px;
+			}
+		}
+		
+		&-img {
+			max-height: 100%;
+		}
+		
+		&-dummy {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			width: 64px;
+			height: 64px;
+			background-color: rgba($accent, 0.1);
+			border-radius: 50%;
+		}
+
+		&-img[data-lazy="loaded"] ~ &-dummy {
+			display: none;
+		}
+		
+		&-heading {
+			margin-bottom: 11px;
+		}
+		
+		&-caption {
+			height: 72px;
+			max-height: 72px;
+			@include text-overflow-line(4);
+			
+			&-link {
+				color: $link;
+				border-bottom: 1px solid $link;
+
+				@media #{$breakpointHover} {
+					&:focus,
+					&:hover {
+						border-color: transparent;
+					}
+				}
+				
+				&:active {
+					color: $accent;
+				}
+			}
+			
+		}
+		
+		&-link-text {
+			display: block;
+			margin-top: 29px;
+			padding: 10px;
+			color: $link;
+
+			@media #{$breakpointTablet} {
+				margin-top: 20px;
+			}
+
+			@media #{$breakpointMobile} {
+				margin-top: 25px;
+			}
+		}
+	}
+	
+	&_linked &__item {
+		
+		&:nth-child(n + 4) {
+			margin-top: 20px;
+
+			@media #{$breakpointMobile} {
+				margin-top: 0;
+			}
+		}
+
+		&-wrp {
+			padding-top: 40px;
+			padding-bottom: 20px;
+			background-color: $light-grey;
+			transition: box-shadow 0.2s ease-out,
+			transform 0.2s ease-out;
+
+			@media #{$breakpointTablet} {
+				padding-top: 30px;
+			}
+
+			@media #{$breakpointMobile} {
+				box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+				padding: 35px 30px 18px;
+			}
+		}
+
+		@media #{$breakpointHover} {
+			&-link:focus ~ .tiles__item-wrp,
+			&-link:hover ~ .tiles__item-wrp {
+				box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+				transform: translateY(-2px);
+			}
+		}
+
+		&-link:active ~ .tiles__item-wrp {
+			box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+			transform: none;
+		}
+		
+		&-heading {
+			@media #{$breakpointOnlyTablet} {
+				height: 48px;
+				max-height: 48px;
+				@include text-overflow-line(2);
+			}
+			
+		}
+		
+		&-dummy {
+			background-color: rgba($link, 0.1);
+		}
+				
+		&-caption {
+			text-align: left;
+
+			@media #{$breakpointOnlyTablet} {
+				height: 90px;
+				max-height: 90px;
+				-webkit-line-clamp: 5;
+			}
+		}
+	}
+
+	&__footer {
+		margin-top: 30px;
+		text-align: center;
+
+		@media #{$breakpointMobile} {
+			margin-top: 25px;
+		}
+	}
+	
+	&__button {
+		
+	}
+}

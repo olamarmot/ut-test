@@ -1,0 +1,34 @@
+//Page
+.page {
+	&__container {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		min-height: 100vh;
+		margin: 0 auto;
+		position: relative;
+	}
+	
+	&__header {
+		flex: 0 0 auto;
+		z-index: 3;
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+
+	&__content {
+		flex: 1 0 auto;
+		position: relative;
+		z-index: 2;
+	}
+
+	&__footer {
+		flex: 0 0 auto;
+	}
+	
+	&__svg {
+		display: none!important;
+	}
+}
+

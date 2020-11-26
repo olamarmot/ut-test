@@ -1,0 +1,72 @@
+//
+// Mixins
+// --------------------------------------------------
+
+@mixin clearfix() {
+  &:before,
+  &:after {
+    content: " ";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+// Center-align a block level element
+@mixin center-block() {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+// Sizing shortcuts
+@mixin size($width, $height) {
+  width: $width;
+  height: $height;
+}
+@mixin square($size) {
+  @include size($size, $size);
+}
+
+@mixin placeholder($color: $placeholder) {
+  &::-moz-placeholder           { color: $color;
+    opacity: 1; }
+  &:-ms-input-placeholder       { color: $color; }
+  &::-webkit-input-placeholder  { color: $color; }
+}
+
+@mixin text-overflow() {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+@mixin text-overflow-line($lines: 2) {
+  -webkit-line-clamp: $lines; /* Число отображаемых строк */
+  display: -webkit-box; /* Включаем флексбоксы */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+@mixin border-radius($radius_tl:0,$radius_tr:0,$radius_br:0,$radius_bl:0) {
+  border-top-left-radius: $radius_tl;
+  border-top-right-radius: $radius_tr;
+  border-bottom-right-radius: $radius_br;
+  border-bottom-left-radius: $radius_bl;
+}
+
+@mixin object-fit($fit: fill, $position: null) {
+  -o-object-fit: $fit;
+  object-fit: $fit;
+  @if $position {
+    -o-object-position: $position;
+    object-position: $position;
+    font-family: 'object-fit: #{$fit}; object-position: #{$position}';
+  } @else {
+    font-family: 'object-fit: #{$fit}';
+  }
+}
+
+
+

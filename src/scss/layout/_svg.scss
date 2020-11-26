@@ -1,0 +1,83 @@
+//SVG
+.svg {
+	transition: color 0.15s ease-out;
+	
+	&_social {
+		color: #fff;
+
+		&-fb {
+			width: 16px;
+			height: 31px;
+			
+			@media #{$breakpointHover} {
+				a:hover &, 
+				a:focus & {
+					color: #3b5998;
+				}
+			}
+			
+			a:active & {
+				color: #3b5998;
+			}
+		}
+
+		&-tw {
+			width: 30px;
+			height: 31px;
+			
+			@media #{$breakpointHover} {
+				a:hover &,
+				a:focus & {
+					color: #1da1f2;
+				}
+			}
+			
+			a:active & {
+				color: #1da1f2;
+			}
+		}
+		
+		&-ig {
+			width: 32px;
+			height: 32px;
+			
+			@media #{$breakpointHover} {
+				a:hover &,
+				a:focus & {
+					color: #fc573b;
+				}
+			}
+			
+			a:active & {
+				color: #fc573b;
+			}
+		}
+
+	}
+	
+	&_arrow {
+		width: 12px;
+		height: 14px;
+	}
+
+	&_burger {
+		width: 20px;
+		height: 20px;
+		
+	}
+
+	&_close {
+		width: 20px;
+		height: 20px;
+	}
+
+	&_buynow {
+		width: 20px;
+		height: 20px;
+	}
+	
+	&_login {
+		width: 20px;
+		height: 20px;
+	}
+}

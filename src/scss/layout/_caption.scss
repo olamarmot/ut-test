@@ -1,0 +1,24 @@
+//Caption
+.caption {
+	font-weight: 400;
+
+	&_size_l {
+		font-size: 18px;
+		line-height: 24px;
+	}
+	
+    &_size_g {
+		font-size: 16px;
+		line-height: 21px;
+
+	    @media #{$breakpointMobile} {
+		    font-size: 15px;
+		    line-height: 20px;
+	    }
+    }
+	
+	&_size_s {
+		font-size: 14px;
+		line-height: 18px;
+	}
+}

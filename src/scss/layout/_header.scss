@@ -1,0 +1,157 @@
+//HEADER LAYOUT
+.header {
+	width: 100%;
+	color: #fff;
+	
+	&.menu-open {
+		color: $link;
+		background-color: #fff;
+	}
+	
+	&__wrp {
+		@extend %wrp;
+		@extend %padding_g;
+		padding-top: 24px;
+		padding-bottom: 24px;
+		background-color: transparent;
+
+		@media #{$breakpointTablet} {
+			padding-top: 20px;
+			padding-bottom: 20px;
+		}
+
+		@media #{$breakpointMobile} {
+			padding-top: 0;
+			padding-bottom: 0;
+		}
+	}
+	
+	&__grid {
+		
+	}
+
+	&__burger {
+		display: none;
+		
+		@media #{$breakpointTablet} {
+			display: block;
+			width: calc((100% - 200px) / 2);
+		}
+
+		@media #{$breakpointMobile} {
+			width: calc((100% - 150px) / 2);
+		}
+
+		&-button {
+			position: relative;
+			cursor: pointer;
+			padding: 14px;
+			margin-left: -14px;
+			color: inherit;
+		}
+
+		&-icon {
+			transition: all 0.2s ease-out;
+			display: block;
+
+			&_close {
+				position: absolute;
+				top: 14px;
+				left: 14px;
+				opacity: 0;
+				transform: rotate(360deg) scale(0);
+			}
+		}
+
+		&-button.open &-icon_close {
+			opacity: 1;
+			transform: rotate(0) scale(1);
+		}
+
+		&-button.open &-icon_burger {
+			opacity: 0;
+		}
+	}
+
+	&__menu {
+		@media #{$breakpointTablet} {
+			display: none;
+			background-color: #fff;
+			color: $link;
+			position: fixed;
+			z-index: -1;
+			bottom: 0;
+			left: 0;
+			width: 100%;
+			height: calc(100% - 89px);
+			padding: 20px;
+			overflow-y: auto;
+		}
+
+		@media #{$breakpointMobile} {
+			height: calc(100% - 48px);
+			padding: 14px 15px;
+		}
+	}
+	
+	&.menu-open &__menu {
+		display: block;
+	}
+	
+	&__logo {
+		display: block;
+		margin-right: 47px;
+		flex-shrink: 0;
+		transition: transform 0.05s linear,
+					filter 0.15s ease-out;
+
+		@media #{$breakpointHover} {
+			&:hover,
+			&:focus {
+				filter: brightness(130%);
+			}
+		}
+		
+		&:active {
+			transform: scale(0.95);
+		}
+
+		@media #{$breakpointTablet} {
+			margin-right: 0;
+			width: 200px;
+		}
+
+		@media #{$breakpointMobile} {
+			width: 150px;
+		}
+		
+		&-img {
+			
+		}
+	}
+	
+	&__nav {
+		width: 100%;
+		
+		@media #{$breakpointTablet} {
+			justify-content: flex-end;
+			width: calc((100% - 200px) / 2);
+		}
+
+		@media #{$breakpointMobile} {
+			width: calc((100% - 150px) / 2);
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,60 @@
+//Grid
+.grid {
+	display: flex;
+	
+	&-inline {
+		display: inline-flex;
+	}
+	
+	&_h {
+		&_between {
+			justify-content: space-between;
+		}
+		
+		&_end {
+			justify-content: flex-end;
+		}
+		
+		&_around {
+			justify-content: space-around;
+		}
+
+		&_center {
+			justify-content: center;
+		}
+	}
+	
+	&_v {
+		&_start {
+			align-items: flex-start;
+		}
+		
+		&_center {
+			align-items: center;
+		}
+		
+		&_end {
+			align-items: flex-end;
+		}
+		
+		&_baseline {
+			align-items: baseline;
+		}
+		
+		&_stretch {
+			align-items: stretch;
+		}
+	}
+	
+	&_wrap {
+		flex-wrap: wrap;
+	}
+	
+	&_col {
+		flex-direction: column;
+	}
+	
+	&_equal > * {
+		flex: 1;
+	}
+}
